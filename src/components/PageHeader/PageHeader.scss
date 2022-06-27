@@ -1,0 +1,14 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.nav-bar {
+  background-color: $primary-color-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+}
+
+.nav-options__image {
+  padding-left: 1rem;
+}

@@ -1,0 +1,27 @@
+@use "../../styles/partials/variables" as *;
+.hero{
+    background-image: url("../../assets/images/HeroImage.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    // height: 25rem;
+    color: $primary-color-white;
+    padding-top: 3.75rem;
+    padding-bottom: 15.5rem;
+    padding-left: 6.25rem;
+    &__h1{
+        font-size: 3.4375rem;
+        font-weight: 700;
+        line-height: 5rem;
+    }
+    &__h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+    &__text{
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        font-weight: 300;
+    }
+}

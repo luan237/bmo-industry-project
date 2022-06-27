@@ -1,0 +1,117 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.branch-maindiv {
+  display:flex;
+  background-color: $secondary-color-grey;
+}
+
+.branch-info {
+  width: 50%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: scroll;
+  height: 34rem;
+
+  &__top {
+    display: flex;
+  }
+
+  &__middle {
+    display: flex;
+    padding-left: 2.75rem;
+    padding-bottom: 2rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box {
+    border: 1px solid $secondary-color-grey;
+    padding: 2rem;
+  }
+}
+
+.branch-location {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.branch-address {
+  padding: 1rem 2rem 2rem 1rem;
+
+  &__name{
+    color: $primary-color-blue;
+    font-family: $secondary-font-family;
+    line-height: 2rem;
+  }
+  &__info {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+}
+
+.branch-contact__image {
+  padding-right: 0.5rem;
+}
+
+.branch-select {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  padding: 1rem;
+  border: 1px solid $primary-color-blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.branch-directions {
+  padding: 3.85rem 0 0 8rem;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    padding-right: 0.5rem;
+  }
+}
+.branch-details__hours{
+  font-weight: 500;
+}
+.branch-details{
+  &__hours{
+    font-weight: 300;
+  }
+  &__directions__text{
+    font-weight: 300;
+  }
+}
+.booking{
+  position: relative;
+  &__text{
+    width: 40%;
+    position: relative;
+    height: 6rem;
+    background-color: $primary-color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 31%;
+    top: -5rem;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  &__agent{
+    width: 60%;
+    margin: 2rem 20%
+  }
+  &__list{
+    width: 100%;
+  }
+}

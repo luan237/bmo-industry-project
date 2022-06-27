@@ -1,0 +1,41 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer-bar {
+  background-color: $primary-color-blue;
+  padding: 3rem 5rem;
+  font-family: $secondary-font-family;
+  color: $primary-color-white;
+}
+
+.footer-container__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container__middle {
+  padding: 1rem 0;
+}
+
+.footer-container__bottom {
+  padding: 1rem 0;
+}
+
+.footer-title__content {
+  font-weight: 300;
+}
+
+.footer-social__image {
+  padding-left: 1rem;
+}
+
+.footer-contact__content {
+  font-size: 12px;
+  padding-right: 1.5rem;
+}
+
+.footer-options__content {
+  font-size: 12px;
+  padding-right: 1rem;
+}

@@ -1,0 +1,122 @@
+@use "../../styles/partials/variables" as *;
+
+.questions{
+    width: 100%;
+    background-color: $secondary-color-grey;
+    position: relative;
+    color: $primary-color-black;
+    padding: 3.5rem ;
+    height: 60rem;
+    &__title{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3.5rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        &--language{
+            color: $primary-color-blue;
+        }
+    }
+    &__form{
+        background-color: $primary-color-white;
+        width: 60rem;
+        height: 27rem;
+        box-shadow: 1px 3px 4px rgba(0,0,0,0.25);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        z-index: 10;
+        left: 5rem;
+        &--title{
+            font-family: $secondary-font-family;
+            font-weight: 500;
+            font-size: 1.75rem;
+            line-height: 2rem;
+            animation: fade 1.5s;
+        }
+        &--answer{
+            animation: fade 1.5s;
+            height: 3rem;
+            border-radius: 4px;
+            border: 1px solid $primary-color-blue;
+            width: 70%;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 300;
+            cursor: pointer;
+            &:hover{
+                border-width: 2px;
+            }
+            &:active{
+                background-color: $primary-color-blue;
+            }
+        }
+    }
+    &__image{
+        background-image: url("../../assets/images/FamilyImage.png");
+        background-size: cover;
+        width: 65rem;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        left: 40%;
+        top: -20rem;
+        z-index: 0;
+    }
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1rem;
+    justify-content: space-around;
+    &__label{
+        display: flex;
+        flex-direction: column;
+        color: $primary-color-blue;
+        position: relative;
+        top: .5rem;
+        left: .5rem;
+        padding: 0 .5rem;
+        background-color: $primary-color-white;
+        width: fit-content;
+    }
+    &__input{
+        animation: fade 1.5s;
+        height: 4rem;
+        border-radius: 4px;
+        border: 2px solid $secondary-color-divider;
+        width: 40rem;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        padding-left: 1rem;
+        &:hover{
+            cursor: text;
+        };
+    }
+    &__submit{
+        background-color: $primary-color-blue;
+        border-radius: 2.25rem;
+        width: 127px;
+        height: 56px;
+        border: none;
+        color: $primary-color-white;
+        margin-left: 36%;
+        &:disabled{
+            background-color: $secondary-color-divider;
+        }
+    }
+}
